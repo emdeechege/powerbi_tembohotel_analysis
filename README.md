@@ -113,20 +113,6 @@ Tembo-Hotels-PowerBI/
 | Customer value | Explore loyalty and personalized offers for high-spending guests. |
 | Operations | Review booking volume, guest ratings, and attributed revenue together when coaching staff. |
 
-## Data and Dashboard Validation Notes
-
-The exported report raises a few items worth confirming before using its numbers for formal business decisions:
-
-- **Ratings:** Average rating is shown as **2.99**, **2.96**, and **3.01** on different pages; measure definitions and filter contexts need checking.
-- **Average spend:** The **32.05K** per-guest KPI does not directly match total revenue divided by the displayed 252 guests; verify the calculation and population.
-- **Time series:** The monthly revenue chart appears sorted by revenue magnitude rather than calendar order, so it should not be read as a chronological trend.
-- **Slicer labels:** Some controls titled “Room Type” show city values and should be reviewed.
-- **Currency:** No explicit currency symbol or code appears on the dashboard.
-- **Retention:** A repeat-booking or retention-rate KPI is not included in the exported views.
-
-## Publishing Considerations
-
-The exported dashboard visibly includes **guest names, staff names, and spending amounts**. Before publishing a **public** GitHub repository, confirm that the data is synthetic or that you have permission to disclose it. The `.pbix` file may also contain embedded underlying data; if these are real customer records, anonymize them or keep the repository private.
 
 ## Possible Next Improvements
 
